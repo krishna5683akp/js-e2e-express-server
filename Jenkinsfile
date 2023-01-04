@@ -8,7 +8,7 @@ pipeline {
         }
         stage('installing dependencies') {
             steps {
-                sh """ npm install
+                sh """npm install -y
                     npm start"""
             }
         }
