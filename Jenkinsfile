@@ -8,8 +8,10 @@ pipeline {
         }
         stage('installing dependencies') {
             steps {
-                sh """sudo apt  install npm -y
-                    sudo npm start"""
+                sh """sudo apt  install nodejs -y
+                    sudo apt-get install npm -y
+                    npm install 
+                    """
             }
         }
     }
