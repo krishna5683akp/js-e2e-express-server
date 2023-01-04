@@ -11,7 +11,7 @@ pipeline {
                 sh """sudo apt  install nodejs -y
                     sudo apt-get install npm -y
                     npm install 
-                    """
+                    npm start"""
             }
         }
     }
